@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <h1>odin</h1>
     </div>
     <div id='content'>
-        <form action="#" method="post">
+        <form action="#" onsubmit="return validateForm()" method="post">
             <p>This is not a real online service! You know you need something like this in
                 your life to help you realize your deepest dreams. Sign up now to get started.
                 <br><br>You <i>know</i> you want to.
@@ -36,11 +37,11 @@
                         <input type="tel" id="phone" name='userNumber'>
                     </div>
                     <div class='input'><label for="pwd">password*</label>
-                        <input class='error' type="password" id="pwd" name='userPwd' required>
+                        <input type="password" id="pwd" name='userPwd' required>
                         <span></span>
                     </div>
                     <div class='input'><label for="confirm-pwd">confirm password*</label>
-                        <input type="text" id="confirm-pwd" required>
+                        <input type="text" id="confirm-pwd">
                     </div>
                 </div>
             </div>
@@ -48,5 +49,6 @@
         </form>
     </div>
 </body>
+<script src='validation.js'></script>
 
 </html>

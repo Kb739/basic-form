@@ -118,9 +118,9 @@ button {
     padding: 12px 40px;
 }
 
-.error{
+.error {
     border: 1px solid var(--focus-color-error);
-    box-shadow:none;
+    box-shadow: none;
 }
 
 .error+span::after {
@@ -128,7 +128,7 @@ button {
     display: block;
     content: "* Passwords do not match";
     text-transform: none;
-    color:red;
+    color: red;
     font-size: 0.75rem;
 }
 
